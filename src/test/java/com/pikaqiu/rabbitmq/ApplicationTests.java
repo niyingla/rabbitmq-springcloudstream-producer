@@ -1,17 +1,16 @@
-package com.bfxy.rabbitmq;
+package com.pikaqiu.rabbitmq;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.pikaqiu.rabbitmq.stream.RabbitmqSender;
 import org.apache.http.client.utils.DateUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import com.bfxy.rabbitmq.stream.RabbitmqSender;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

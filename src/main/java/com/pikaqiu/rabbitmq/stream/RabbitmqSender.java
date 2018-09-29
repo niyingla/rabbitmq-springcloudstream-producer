@@ -9,6 +9,7 @@ import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
 
+//启用
 @EnableBinding(Barista.class)
 @Service  
 public class RabbitmqSender {  

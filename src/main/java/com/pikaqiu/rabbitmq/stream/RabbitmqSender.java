@@ -19,8 +19,11 @@ public class RabbitmqSender {
     // 发送消息
     public String sendMessage(Object message, Map<String, Object> properties) throws Exception {  
         try{
+            //创建属性
         	MessageHeaders mhs = new MessageHeaders(properties);
+        	//创建消息
         	Message msg = MessageBuilder.createMessage(message, mhs);
+        	//发送消息
             boolean sendStatus = barista.logoutput().send(msg);
             System.err.println("--------------sending -------------------");
             System.out.println("发送数据：" + message + ",sendStatus: " + sendStatus);
